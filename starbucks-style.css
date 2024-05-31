@@ -172,7 +172,7 @@
 /* footer code */
 footer {
 
-    height: 50vh;
+    height: 30vh;
 
 }
 
@@ -181,18 +181,34 @@ footer {
 
     display: flex;
     justify-content: space-evenly;
+}
 
+.footer-container ul {
+
+    margin-top: 50px;
+    list-style-type: none;
+    padding-left: 0;
 
 }
 
-.footer-container .footer-hidden-column {
-    display: none;
+.footer-container li {
+
+    padding-bottom: 20px;
+    color: rgba(0, 0, 0, 0.58);
 }
 
+.footer-container li:hover {
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.footer-container h2 {
+
+    color: rgba(0, 0, 0, 0.87);
+
+}
 
 .footer-item {
-    display: block;
 
-
+    padding-top: 20px;
 
 }
