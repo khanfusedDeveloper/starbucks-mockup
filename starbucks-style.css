@@ -14,7 +14,7 @@
     justify-content: space-between;
     /* background-color: red; */
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-    margin-bottom: 10px;
+
 }
 
 .navbar-left {
@@ -105,5 +105,94 @@
 
 .sign-in:hover {
     background-color: rgba(0, 0, 0, 0.1);
+
+}
+
+/* product starts here... */
+
+.product-container {
+    margin-top: 20px;
+    display: flex;
+    background-color: #1e3932;
+    justify-content: space-between;
+
+}
+
+.product-left img {
+    max-width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    object-fit: fill;
+    overflow: hidden;
+
+}
+
+.product-right,
+.product-left {
+    flex: 1 1 50%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.product-right h1 {
+    text-align: center;
+}
+
+.sign-up {
+
+
+    object-fit: cover;
+    width: 20%;
+    max-width: 20%;
+    color: white;
+    background-color: black;
+    border-radius: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.sign-up:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-color: rgba(0, 0, 0, 0.6);
+
+}
+
+.product-right {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    object-fit: cover;
+
+}
+
+
+/* footer code */
+footer {
+
+    height: 50vh;
+
+}
+
+
+.footer-container {
+
+    display: flex;
+    justify-content: space-evenly;
+
+
+}
+
+.footer-container .footer-hidden-column {
+    display: none;
+}
+
+
+.footer-item {
+    display: block;
+
+
 
 }
