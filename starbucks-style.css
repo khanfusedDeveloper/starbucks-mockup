@@ -12,9 +12,11 @@
     display: flex;
     background-color: white;
     justify-content: space-between;
-    /* background-color: red; */
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-sizing: border-box;
 }
 
 .navbar-left {
