@@ -16,7 +16,9 @@
     position: fixed;
     width: 100%;
     top: 0;
+    margin-bottom: 10px;
     box-sizing: border-box;
+    z-index: 10;
 }
 
 .navbar-left {
@@ -113,7 +115,7 @@
 /* product starts here... */
 
 .product-container {
-    margin-top: 20px;
+    margin-top: 100px;
     display: flex;
     background-color: #1e3932;
     justify-content: space-between;
