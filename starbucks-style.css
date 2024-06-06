@@ -1,14 +1,12 @@
 * {
     margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
 @media only screen and (max-width: 1024px) {
 
-    .navbar-left svg {
-        height: 50px;
-        width: 50px;
-    }
 
     .navbar {
 
@@ -28,6 +26,89 @@
         display: flex;
         align-items: center;
 
+    }
+
+    .navbar-left svg {
+        height: 50px;
+        width: 50px;
+    }
+
+    .navbar .navbar-left .toggle {
+        display: none;
+
+    }
+
+    .navbar .navbar-left .hamburger {
+
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 30px;
+        height: 20px;
+    }
+
+    .hamburger span {
+
+        background-color: #fff;
+        height: 3px;
+        width: 100%;
+        transition: all 0.3s ease;
+
+    }
+
+    .navbar .navbar-left .menu {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+
+    }
+
+    .navbar .navbar-left .menu li {
+        cursor: pointer;
+        padding: 10px 20px;
+    }
+
+    .navbar .navbar-left .menu li a {
+        cursor: pointer;
+        color: #fff;
+        text-decoration: none;
+
+    }
+
+    .navbar .navbar-left .menu li a:hover {
+        background-color: #555;
+
+    }
+
+
+    /* showing mobile menu when checkbox is clicked */
+
+    #toggle:checked+.hamburger+.menu {
+        display: flex;
+    }
+
+    #toggle:checked+.hamburger span:nth-child(1) {
+        transform: rotate(45deg);
+        top: 8px;
+        position: relative;
+    }
+
+    #toggle:checked+.hamburger span:nth-child(2) {
+        opacity: 0;
+    }
+
+    #toggle:checked+.hamburger span:nth-child(3) {
+        transform: rotate(-45deg);
+        top: -8px;
+        position: relative;
     }
 
     .menu:hover {
