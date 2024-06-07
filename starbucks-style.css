@@ -34,14 +34,20 @@
 
     .hamburger-container {
         cursor: pointer;
-        display: flex;
+        display: inline-block;
         align-items: center;
+        box-sizing: border-box;
+
+
     }
 
     .hamburger-container img {
         width: 20px;
         height: 20px;
         transition: all 0.7s ease;
+        transform-origin: center;
+        vertical-align: middle;
+
     }
 
     .navbar .navbar-left .hamburger {
@@ -91,7 +97,6 @@
 
     .navbar .navbar-left .menu li a:hover {
         background-color: #555;
-
     }
 
 
@@ -99,6 +104,10 @@
     /* Show menu when the hamburger icon is clicked */
     .hamburger-container.active+.menu {
         display: flex;
+    }
+
+    .hamburger-container.active img {
+        transform: rotate(90deg);
     }
 
     .menu:hover {
