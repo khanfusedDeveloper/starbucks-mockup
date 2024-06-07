@@ -25,17 +25,23 @@
     .navbar-left {
         display: flex;
         align-items: center;
-
     }
 
-    .navbar-left svg {
+    .navbar-left .main-svg {
         height: 50px;
         width: 50px;
     }
 
-    .navbar .navbar-left .toggle {
-        display: none;
+    .hamburger-container {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
 
+    .hamburger-container img {
+        width: 20px;
+        height: 20px;
+        transition: all 0.7s ease;
     }
 
     .navbar .navbar-left .hamburger {
@@ -90,25 +96,9 @@
 
 
     /* showing mobile menu when checkbox is clicked */
-
-    #toggle:checked+.hamburger+.menu {
+    /* Show menu when the hamburger icon is clicked */
+    .hamburger-container.active+.menu {
         display: flex;
-    }
-
-    #toggle:checked+.hamburger span:nth-child(1) {
-        transform: rotate(45deg);
-        top: 8px;
-        position: relative;
-    }
-
-    #toggle:checked+.hamburger span:nth-child(2) {
-        opacity: 0;
-    }
-
-    #toggle:checked+.hamburger span:nth-child(3) {
-        transform: rotate(-45deg);
-        top: -8px;
-        position: relative;
     }
 
     .menu:hover {
